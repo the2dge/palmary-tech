@@ -146,6 +146,28 @@ body{
     position: relative;
     transition: background-image 1.5s linear;
 }
+.intro2{
+	  padding: 200px 0;
+    background-image: url(../images/machine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -90px;
+    z-index: 11;
+    position: relative;
+    transition: background-image 1.5s linear;
+}
+.intro3{
+	  padding: 200px 0;
+    background-image: url(../images/distribution.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -90px;
+    z-index: 11;
+    position: relative;
+    transition: background-image 1.5s linear;
+}
 .nutral{
 	background-color: #ebebeb;
 	height: 90px;
@@ -247,11 +269,13 @@ body{
 .product .section-bg{
 	background-color: #fff;
 }
-.porduct-box{
+.product-box{
 	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
 	position: relative;
 }
-.porduct-box img{
+.product-box img{
 	width: 100% !important;
 }
 .product-title{
@@ -260,11 +284,26 @@ body{
     left: 25px;
     right: 25px;
     padding: 15px;
-    background-color: #fabe12;
+    background-color: rgba(250, 190, 18, 0.7);
     text-transform: uppercase;
     color: #fff;
     text-align: center;
     font-weight: 300;
+}
+.product-content{
+	  position: absolute;
+    top: 100px;
+    left: 25px;
+    right: 25px;
+    padding: 15px;
+    background-color: rgba(15, 10, 10, 0.7);
+    font-size: 30px;
+
+    text-align: center;
+    height: 80%;
+}
+.product-content >p{
+	color: green;
 }
 .classic-title{
 	margin-top: 100px;
@@ -321,6 +360,7 @@ body{
 /*======================================================================
 ##		History Section
 =======================================================================*/
+
 .history .section-bg{
 	background-color: #222;
 	text-align: center;
@@ -398,9 +438,7 @@ body{
 .intro{
 	background-color: #313131;
 }
-.faq-header .intro{
-	background-image: url(../images/hongkong2.jpg);
-}
+
 .shop-header .intro{
 	background-image: url(../images/shop-header.jpg);
 }
@@ -408,7 +446,7 @@ body{
 	background-image: url(../images/contact-header.jpg);
 }
 .about-header .intro{
-	background-image: url(../images/hongkong2.jpg);
+	background-image: url(../images/hongkong.jpg);
 }
 .about .page-bgc{
 	padding-bottom: 0;

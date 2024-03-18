@@ -523,11 +523,11 @@ sup {
 .product-box.homepageDist{
 	background-image: url(../images/distribution.jpg);
 	background-size: cover;
-	background-position: center;
+	
 }
 @media(max-width: 420px){
 	.product-box.distribution{
-  height: 200vh;
+     height: 200vh;
 	position: relative;
 }
 }

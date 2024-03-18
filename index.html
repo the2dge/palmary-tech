@@ -240,14 +240,11 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("logoHeader").style.top = "0"; // Scrolling up, show logo
+    document.getElementById("logoHeader").style.top = "0";
   } else {
-    if (currentScrollPos > 35 && currentScrollPos <= 90) {
-      document.getElementById("logoHeader").style.top = "-68px"; // First step
-    } else if (currentScrollPos > 90) {
-      document.getElementById("logoHeader").style.top = "-90px"; // Second step
-    }
+    document.getElementById("logoHeader").style.top = "-90px";
   }
+  
   prevScrollpos = currentScrollPos;
 }
 </script>

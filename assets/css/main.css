@@ -80,21 +80,31 @@ sup {
 /*======================================================================
 ##		Header Section
 =======================================================================*/
+
 #logoHeader{
-  position: fixed;
+
+	position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 999; 
+  transition: 0.5s;
+ /* position: fixed;
   top: 0;
   width: 100%;
   height: 100px;
   display: block;
-  transition: top 0.2s; /* Smooth transition for the top property */
-  position: fixed; /* Example positioning, adjust as necessary */
-}
-}
+  transition: top 0.4s; 
+  position: fixed; */
+} 
+
+
+
 .site-header-bg{
 	width: 100%;
 	background-color: #eee;
 	z-index: 1;
 	padding-top: 5px;
+	padding-bottom: 5px;
 	color: #fff;
 	justify-content: center;
 	text-transform: uppercase;
@@ -132,7 +142,7 @@ sup {
 	letter-spacing: 3px;
 	background: #eee;
 	position: relative;
-	margin-top:90px;
+	margin-bottom: 10px;
 }
 .header-quote{
 	color: #fabe12;
@@ -384,6 +394,14 @@ sup {
     height: auto; /* Maintains the aspect ratio */
   }
 }
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.btn-flash {
+  animation: flash 3s infinite;
+}
+
 /*======================================================================
 ##		History Section
 =======================================================================*/

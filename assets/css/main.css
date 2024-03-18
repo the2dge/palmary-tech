@@ -373,11 +373,11 @@ sup {
 	font-size: 20px;
 	font-weight: 400;
 }
-@media (min-width: 768px){
+
 	.boxed{
 		padding: 0 40px;
 	}
-}
+
 @media (max-width: 768px){
 	.product p{
 	margin-top: -5px;

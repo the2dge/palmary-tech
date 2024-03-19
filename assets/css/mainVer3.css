@@ -80,6 +80,7 @@ sup {
 /*======================================================================
 ##		Header Section
 =======================================================================*/
+
 #logoHeader{
 
 	position: -webkit-sticky; /* For Safari */
@@ -87,13 +88,23 @@ sup {
   top: 0;
   z-index: 999; 
   transition: 0.5s;
-  padding-bottom: 5px;
+ /* position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: block;
+  transition: top 0.4s; 
+  position: fixed; */
 } 
+
+
+
 .site-header-bg{
 	width: 100%;
 	background-color: #eee;
 	z-index: 1;
 	padding-top: 5px;
+	padding-bottom: 5px;
 	color: #fff;
 	justify-content: center;
 	text-transform: uppercase;
@@ -131,6 +142,7 @@ sup {
 	letter-spacing: 3px;
 	background: #eee;
 	position: relative;
+	margin-bottom: 10px;
 }
 .header-quote{
 	color: #fabe12;
@@ -286,7 +298,7 @@ sup {
 	margin-bottom: 30px;
 	display: flex;
 	flex-wrap: wrap;
-	height: 100vh;
+
 	position: relative;
 }
 .product-box img{
@@ -313,7 +325,7 @@ sup {
     padding: 15px;
     background-color: rgba(15, 10, 10, 0.7);
     font-size: 20px;
-
+    min-height: 100vh;
     text-align: center;
     height: 80%;
 }
@@ -361,6 +373,7 @@ sup {
 	font-size: 20px;
 	font-weight: 400;
 }
+
 @media (min-width: 768px){
 	.boxed{
 		padding: 0 40px;
@@ -389,6 +402,7 @@ sup {
 .btn-flash {
   animation: flash 3s infinite;
 }
+
 /*======================================================================
 ##		History Section
 =======================================================================*/
@@ -537,7 +551,7 @@ sup {
 	position: relative;
 }
  .product-box.manufacture{
-  height: 110vh;
+  height: 120vh;
 	position: relative;
 }
 }
@@ -547,7 +561,7 @@ sup {
 	position: relative;
 }
  .product-box.manufacture{
-  height: 120vh;
+  height: 130vh;
 	position: relative;
 }
 }
@@ -561,20 +575,7 @@ sup {
 	position: relative;
 }
 }
-/*
-@media(max-width: 768px){
-	.product-box{
-  height: 140vh;
-	position: relative;
-}
-}
-@media(max-width: 1080px){
-	.product-box{
-  height: 116vh;
-	position: relative;
-}
-}
-*/
+
 /*======================================================================
 ##		FAQ
 =======================================================================*/

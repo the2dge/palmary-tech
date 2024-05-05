@@ -1,5 +1,25 @@
 $(document).ready(function(){
 
+     // Initialize Isotope with a filter
+    var $grid = $('.isotope-grid').isotope({
+        itemSelector: '.isotope-item',
+        layoutMode: 'fitRows',
+        // Set the initial filter
+        filter: '.Stamping'
+    });
+
+    // Filter items on button click
+    $('.filter-tope-group').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+
+        // Optionally, add logic to handle active button state
+        $('.filter-tope-group button').removeClass('active');
+        $(this).addClass('active');
+    });
+
+
+
     // Partner slider
         $('#partner-slider').owlCarousel({
             loop:true,
